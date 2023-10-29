@@ -1,8 +1,7 @@
-Pipeline{
-
+pipeline{
     stages{
-        stage(name: '1st Stage'){
-            echo "env.BUILD_NUMBER"
+        stage(name: 'Number1 Stage'){
+            echo env.BUILD_NUMBER
         }
     }
 }
