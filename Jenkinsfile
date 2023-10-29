@@ -1,7 +1,8 @@
 pipeline{
     stages{
         stage(name: 'Number1 Stage'){
-            echo env.BUILD_NUMBER
+            steps{
+                echo BUILD_NUMBER
         }
     }
 }
