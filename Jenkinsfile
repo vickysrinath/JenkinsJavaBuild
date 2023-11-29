@@ -1,8 +1,20 @@
-pipeline{
-    stages{
-        stage(name: "Number1 Stage"){
-            steps{
-                echo BUILD_NUMBER
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
             }
         }
     }
